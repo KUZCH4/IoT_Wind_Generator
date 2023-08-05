@@ -1,0 +1,63 @@
+// AUTOMATICALLY GENERATED FILE. PLEASE DO NOT MODIFY IT MANUALLY
+//
+// PIO Unified Debugger
+//
+// Documentation: https://docs.platformio.org/page/plus/debugging.html
+// Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++ Runner: Debug Session",
+            "type": "cppdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": true,
+            "cwd": "d:/Documents/PlatformIO/Projects/12864_energo",
+            "program": "d:/Documents/PlatformIO/Projects/12864_energo/build/Debug/outDebug",
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug",
+            "executable": "d:/Documents/PlatformIO/Projects/12864_energo/.pio/build/esp12e/firmware.elf",
+            "projectEnvName": "esp12e",
+            "toolchainBinDir": "C:/Users/Pavlo/.platformio/packages/toolchain-xtensa/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "preLaunchTask": {
+                "type": "PlatformIO",
+                "task": "Pre-Debug"
+            }
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (skip Pre-Debug)",
+            "executable": "d:/Documents/PlatformIO/Projects/12864_energo/.pio/build/esp12e/firmware.elf",
+            "projectEnvName": "esp12e",
+            "toolchainBinDir": "C:/Users/Pavlo/.platformio/packages/toolchain-xtensa/bin",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (without uploading)",
+            "executable": "d:/Documents/PlatformIO/Projects/12864_energo/.pio/build/esp12e/firmware.elf",
+            "projectEnvName": "esp12e",
+            "toolchainBinDir": "C:/Users/Pavlo/.platformio/packages/toolchain-xtensa/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "loadMode": "manual"
+        }
+    ]
+}
