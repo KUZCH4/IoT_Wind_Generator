@@ -58,11 +58,11 @@
  
   U8G2_KS0108_128X64_F u8g2(ROTATION, D0, D1, D2, D3, D2, D3, D4, D5, D6, D7,
                             EN, D/I, CS0, CS1, CS2, RESET);
-  ROTATION:   угол поворота дисплея
-    U8G2_R0:  0 градусов
-    U8G2_R1:  90 градусов
-    U8G2_R2:  180 градусов
-    U8G2_R3:  270 градусов
+  ROTATION:   
+    U8G2_R0:  0 
+    U8G2_R1:  90 
+    U8G2_R2:  180 
+    U8G2_R3:  270  
 */
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
@@ -74,8 +74,8 @@ U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);
 //U8G2_ST7920_128X64_F_SW_SPI u8g2(U8G2_R0, /* clock=*/ D5, /* data=*/ D6, /* CS=*/ D7 /* reset=*/ ); // Feather HUZZAH ESP8266, E=clock=14, RW=data=13, RS=C
 //Adafruit_SSD1306 u8g2 = Adafruit_SSD1306(SCREEN_WIDTH, SCREEN_HEIGHT, &WIRE, OLED_RESET);
 
-const char *ssid     = "KUZCHnet_1";
-const char *password = "#kuzch_5228";
+const char *ssid     = "test";
+const char *password = "password";
 
 static const char ntpServerName[] = "ua.pool.ntp.org";
 const int timeZone = 2;
